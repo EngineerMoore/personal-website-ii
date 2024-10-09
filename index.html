@@ -2,13 +2,23 @@
 <html="en">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
     <title>Alexia Moore</title>
     <link rel="stylesheet" href="./style.css"/>
+    <style>
+      @media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  [class="row"] {
+    flex-direction: column;
+  }
+  @media screen and (max-width:520px) {[class="row"] { display:flex; flex-;}
+    
+  }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="container">
+      <nav class="container-nav">
         <a class="nav" href="./index.html"/><img id="logo" src="../../block-09/personal-website/Logo.png"/></a>
         <a class="nav nav-links" href="./index.html">Home</a>
         <a class="nav nav-links" href="./about.html">About</a>
@@ -16,11 +26,18 @@
         <a class="nav nav-links" href="./contact.html">Contact</a>
       </nav>
     </header>
-    <main>
-      <h1>Alexia Moore</h1>
+    <main class="row">
+      <div class="container">
+        <h1>Alexia Moore</h1>
+        <h2>Software Engineer</h2>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aenean commodo ligula eget dolor.  Aenean massa.  Cum sociis natoque penatibus et </p>
+      </div>
+      <div class="headshot" /style="align-self: flex-end;">
+        <img src="./headshot.png" style="filter: contrast(150%) saturate(120%); float:right;"/>
+      </div>
     </main>
     <footer>
-    ljkjko jkjlkkj kjkjkj lklk jkjlklm jkk
+      ljkjko jkjlkkj kjkjkj lklk jkjlklm jkk
     </footer>
   </body>
 </html>
